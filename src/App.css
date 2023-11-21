@@ -3,4 +3,55 @@
   background-color: darkgray;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+}
+.barre {
+  text-decoration: line-through;
+}
+
+.tache {
+  display: flex;
+  gap: 150px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgb(199, 195, 195);
+  padding: 7px;
+  margin: 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background-color: azure;
+}
+
+.tache h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.tache button {
+  font-size: 17px;
+  margin-left: 7px;
+  padding: 6px;
+}
+.todo {
+  width: fit-content;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.add {
+  display: flex;
+  margin-bottom: 20px;
+}
+.add button {
+  font-size: 17px;
+  margin-left: 7px;
+  padding: 6px;
+}
+
+.add input {
+  flex-grow: 1;
+  padding: 5px;
+  font-size: 17px;
+  outline-color: darkgray;
 }
