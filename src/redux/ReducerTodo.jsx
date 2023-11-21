@@ -36,6 +36,15 @@ const ReducerTodo = (state = initial_state, action) => {
         case types.UPDATE_TACHE: 
             newState.tasks = newState.tasks.map(t => t.id == action.payload ? {...t, completed:!t.completed} :t)
         break;
+        case types.DELETE_ALL: 
+            newState.tasks = []
+        break;
+        case types.DELETE_TER: 
+            newState.tasks = newState.tasks.filter(t => !t.completed)
+        break;
+        case types.DELETE_NOTERM: 
+            newState.tasks = newState.tasks.filter(t => t.completed)
+        break;
     }
 
 

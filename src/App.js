@@ -1,6 +1,8 @@
 import './App.css';
 import AddTache from './components/AddTache';
+import DeleteTasks from './components/DeleteTasks';
 import ListTasks from './components/ListTasks';
+import StatsTasks from './components/StatsTasks';
 
 function App() {
   return (
@@ -8,6 +10,8 @@ function App() {
       <div className='todo'>
         <AddTache />
         <ListTasks />
+        <DeleteTasks />
+        <StatsTasks />
       </div>
     </div>
   );

@@ -21,3 +21,21 @@ export const updatetache = (id) => {
         payload: id
     }
 }
+
+export const deleteall = () => {
+    return {
+        type: types.DELETE_ALL,
+    }
+}
+
+export const deletetermines = () => {
+    return {
+        type: types.DELETE_TER,
+    }
+}
+
+export const deletenontermines = () => {
+    return {
+        type: types.DELETE_NOTERM,
+    }
+}
